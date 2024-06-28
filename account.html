@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Prototype</title>
+  <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    
+    .profile-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .account-container {
+      max-width: 800px;
+      margin: auto;
+    }
+    .membership-details, .manage-account {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="row bg-dark">
+    <div class="col-md-12">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img src="./static/images/netflix-logo new.jpg" style="height: 40px;width:160px;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./trendingnow.html">Trending Now</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tvshows.html">Tv Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./movies.html">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+            </ul>
+            <div class="search-container d-flex align-items-center">
+              <button class="btn search-btn">
+                <i class="fas fa-search" style="color: white;"></i>
+              </button>
+              <div class="search-bar ms-2">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              </div>
+              <i class="fa fa-bell" aria-hidden="true" style="margin-left: 8px;color: white;cursor: pointer;"></i>
+              <i class="fas fa-user icon active" aria-hidden="true" style="margin-left: 20px;color: white;cursor: pointer;"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Account Container -->
+  <div class="account-container">
+    <h2>Account</h2>
+
+    <!-- Profile Section -->
+    <div class="profile-section mb-4">
+      <h4>Profile</h4>
+      <div class="d-flex align-items-center">
+        <img src="https://via.placeholder.com/60" alt="Profile Icon" class="profile-icon mr-3">
+        <div>
+          <h5>John Doe</h5>
+          <p>Email: johndoe@example.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Membership Details -->
+    <div class="membership-details">
+      <h4>Membership Details</h4>
+      <p>Plan: Premium</p>
+      <p>Next Billing Date: July 20, 2024</p>
+    </div>
+
+    <!-- Manage Account Details -->
+    <div class="manage-account">
+      <h4>Manage Account</h4>
+      <button class="btn btn-primary mb-2" onclick="changePassword()">Change Password</button>
+      <button class="btn btn-secondary mb-2" onclick="updatePayment()">Update Payment Method</button>
+      <button class="btn btn-danger mb-2" onclick="cancelMembership()">Cancel Membership</button>
+    </div>
+  </div>
+
+  <script>
+    function changePassword() {
+      alert('Change Password functionality not implemented.');
+    }
+    function updatePayment() {
+      alert('Update Payment Method functionality not implemented.');
+    }
+    function cancelMembership() {
+      alert('Cancel Membership functionality not implemented.');
+    }
+  </script>
+
+  <script src="./static/js/popper.js"></script>
+  <script src="./static/js/bootstrap.min.js"></script>
+  <script>
+    document.querySelector('.search-btn').addEventListener('click', function () {
+      document.querySelector('.search-bar').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

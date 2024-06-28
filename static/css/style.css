@@ -1,0 +1,129 @@
+body {
+    background-color: #141414;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-bar {
+    display: none;
+    transition: width 0.3s ease;
+    width: 0;
+    overflow: hidden;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.search-bar.active {
+    display: block;
+    width: 300px;
+}
+
+.white-thumb {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.clicked {
+    filter: none;
+}
+
+.group {
+    background-image: url("../images/wp1935737 (1).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 3% 2% 6% 2%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.group h3, .group h4, .group label, .group button {
+    z-index: 1;
+    position: relative;
+}
+
+.group::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.treandingNow {
+    background-color: #191313;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.tvShows {
+    background-color: #191313;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.movies {
+    background-color: #191313;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.card {
+    margin: 0.5rem;
+}
+
+
+.card-container {
+    width: 16rem;
+    height: 160px;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    margin-left: 14px;
+}
+
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.card-title {
+    color: white;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+
