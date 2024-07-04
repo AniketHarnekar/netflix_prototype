@@ -1,1 +1,3 @@
-# netflix_prototype
+# netflix prototype
+It is just a static UI of my netflix prototype 
+new cahnges are coming soon......
